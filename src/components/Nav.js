@@ -82,7 +82,7 @@ const Nav = () => {
             </div>
           </div>
           <div>{click && content}</div>
-          <button className='block sm:hidden transtion ' onClick={handleClick}>
+          <button className='block md:hidden transtion ' onClick={handleClick}>
             {click ? <FaTimes /> : <CiMenuFries />}
           </button>
         </div>
