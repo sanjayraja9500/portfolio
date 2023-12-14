@@ -5,6 +5,7 @@ import { FiTwitter } from 'react-icons/fi';
 import { FaInstagram } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { TypeAnimation } from 'react-type-animation';
 const Banner = () => {
   useEffect(() => {
     AOS.init({
@@ -14,7 +15,10 @@ const Banner = () => {
     });
   }, []);
   return (
-    <div className='lg:px-56 px-10 lg:py-0 py-20 text-center gap-5 lg:text-start flex lg:flex-row flex-col-reverse justify-between lg:gap-28 items-center'>
+    <div
+      id='Home'
+      className='lg:px-56 px-10 lg:py-0 py-20 text-center gap-5 lg:text-start flex lg:flex-row flex-col-reverse justify-between lg:gap-28 items-center'
+    >
       <div className='h-full lg:py-40 flex flex-col justify-center lg:items-start items-center text-white'>
         <h1
           data-aos='fade-right'
@@ -23,14 +27,31 @@ const Banner = () => {
           Welcome To <span className='text-fuchsia-500'>My Website</span>
         </h1>
         <p data-aos='fade-left'>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio,
-          libero?Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-          praesentium velit dolore quia officiis quidem magnam est quis!
-          Pariatur eum sequi ab perferendis numquam nulla! Ratione voluptatum
-          placeat nobis ipsum! Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Aliquid maxime neque dolorem odit vero quae sint
-          commodi non laudantium reiciendis quis asperiores similique natus,
-          eius placeat voluptate voluptatum cum sequi.
+          <h1 className='sm:text-5xl text-4xl font-bold text-white'>
+            {' '}
+            I'm Sanjay Raja
+          </h1>
+          <div>
+            {' '}
+            <h2 className='flex sm:text-6xl mt-10 text-2xl text-white'>
+              I'm a
+              <TypeAnimation
+                sequence={[
+                  'Developer',
+                  2000,
+                  'Coder',
+                  2000,
+                  'Tech Enthusiast',
+                  2000,
+                ]}
+                wrapper='div'
+                cursor={true}
+                speed={40}
+                repeat={Infinity}
+                style={{ fontSize: '1em', paddingLeft: '5px' }}
+              />
+            </h2>
+          </div>
         </p>
         <div className='flex mt-8 gap-2'>
           <div className='flex items-center justify-center'>

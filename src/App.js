@@ -2,11 +2,12 @@ import React, { useEffect, useState } from 'react';
 import Nav from './components/Nav';
 import Banner from './components/Banner';
 import About from './components/About';
-import Service from './components/Service';
+
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { BallTriangle } from 'react-loader-spinner';
+import Skill from './components/Skill';
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -36,7 +37,7 @@ function App() {
           <Nav />
           <Banner />
           <About />
-          <Service />
+          <Skill />
           <Projects />
           <Contact />
           <Footer />

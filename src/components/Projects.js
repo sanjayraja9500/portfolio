@@ -103,7 +103,7 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className=' w-3/4 h-max p-3 mx-auto border-2 border-gray-400 bg-slate-800 mt-10'>
+      <div className=' w-full h-max p-3 mx-auto border-2 border-gray-400 bg-slate-800 mt-10'>
         <OwlCarousel
           data-aos='fade-down'
           className='owl-theme w-full '
@@ -119,9 +119,9 @@ const Projects = () => {
                   className='rounded-md  mx-auto  duration-200 hover:scale-105'
                 />
               </div>
-              <div className='flex items-center justify-center bg-white gap-5 border-2   border-fuchsia-800'>
+              <div className='flex items-center justify-center bg-white gap-1 md:gap-5 border-2   border-fuchsia-800'>
                 <a
-                  className='  m-4  hover:scale-125   text-2xl border-2  rounded-full  hover:text-fuchsia-800 transition-all duration-150 ease-in-out'
+                  className='  m-1 md:m-4   hover:scale-125   text-2xl border-2  rounded-full  hover:text-fuchsia-800 transition-all duration-150 ease-in-out'
                   href={live}
                   target='_blank'
                   rel='noreferrer'
@@ -129,7 +129,7 @@ const Projects = () => {
                   <IoArrowRedoCircleSharp size={30} />
                 </a>
                 <a
-                  className=' m-4  hover:scale-125   text-2xl border-2  hover:text-fuchsia-800 transition-all duration-150 ease-in-out rounded-full '
+                  className=' m-1 md:m-4 mr-0 md:mr-0 hover:scale-125   text-2xl border-2  hover:text-fuchsia-800 transition-all duration-150 ease-in-out rounded-full '
                   href={github}
                   target='_blank'
                   rel='noreferrer'
