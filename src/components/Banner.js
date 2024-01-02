@@ -6,6 +6,8 @@ import { FaInstagram } from 'react-icons/fa';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { TypeAnimation } from 'react-type-animation';
+import Img from '../assets/Img.jpg';
+
 const Banner = () => {
   useEffect(() => {
     AOS.init({
@@ -27,28 +29,28 @@ const Banner = () => {
           Welcome To <span className='text-fuchsia-500'>My Website</span>
         </h1>
         <p data-aos='fade-left'>
-          <h1 className='sm:text-5xl text-4xl font-bold text-white'>
+          <h1 className='sm:text-5xl text-2xl font-bold text-white'>
             {' '}
             I'm Sanjay Raja
           </h1>
           <div>
             {' '}
-            <h2 className='flex sm:text-6xl mt-10 text-2xl text-white'>
+            <h2 className='flex sm:text-6xl mt-10 text-base text-white'>
               I'm a
               <TypeAnimation
                 sequence={[
-                  'Developer',
-                  2000,
+                  'Frontend Developer',
+                  2500,
                   'Coder',
                   2000,
-                  'Tech Enthusiast',
+                  'Web Designer',
                   2000,
                 ]}
                 wrapper='div'
                 cursor={true}
                 speed={40}
                 repeat={Infinity}
-                style={{ fontSize: '1em', paddingLeft: '5px' }}
+                style={{ fontSize: '', paddingLeft: '7px' }}
               />
             </h2>
           </div>
@@ -57,28 +59,28 @@ const Banner = () => {
           <div className='flex items-center justify-center'>
             <div className='flex space-x-2'>
               <a
-                href=' '
+                href='https://github.com/sanjayraja9500 '
                 className='text-fuchsia-600 hover:text-fuchsia-500 rounded-full glow p-2 '
               >
                 <AiFillGithub className='text-[28px]' />
               </a>
 
               <a
-                href=' '
+                href='https://www.linkedin.com/in/sanjay-raja-3526b5189/ '
                 className='text-fuchsia-600 hover:text-fuchsia-500 rounded-full glow p-2 '
               >
                 <FaLinkedinIn className='text-[28px]' />
               </a>
 
               <a
-                href=' '
+                href='https://twitter.com/i/flow/login '
                 className='text-fuchsia-600 hover:text-fuchsia-500 rounded-full glow p-2 '
               >
                 <FiTwitter className='text-[28px]' />
               </a>
 
               <a
-                href=' '
+                href='https://www.instagram.com/sanju_sweety.03/?next=%2F '
                 className='text-fuchsia-600 hover:text-fuchsia-500 rounded-full glow p-2 '
               >
                 <FaInstagram className='text-[28px]' />
@@ -89,11 +91,9 @@ const Banner = () => {
       </div>
       <img
         data-aos='fade-up'
-        src='https://images.unsplash.com/photo-1474112704314-8162b7749a90?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGZsb3dlcnxlbnwwfHwwfHx8MA%3D%3D'
-        width={290}
-        height={290}
-        alt=''
-        className='rounded-sm border-2 p-1 border-fuchsia-500 img_glow'
+        src={Img}
+        alt='img'
+        className='rounded-sm border-2 p-1 border-fuchsia-500 img_glow w-[10rem] h-[20rem]'
       />
     </div>
   );

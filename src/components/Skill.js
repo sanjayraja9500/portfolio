@@ -4,6 +4,7 @@ import CSS from '../assets/logo/css.png';
 import JS from '../assets/logo/JS.png';
 import GH from '../assets/logo/gh.png';
 import FS from '../assets/logo/fs.png';
+import TW from '../assets/logo/TW.jpg';
 import REACT from '../assets/logo/atom.png';
 const Skill = () => {
   return (
@@ -72,6 +73,16 @@ const Skill = () => {
           <img src={FS} className='mt-4 px-5' size={20} alt='' />
           <h2 className='text-[26px] flex items-center justify-center font-semibold text-fuchsia-800 rounded-3xl mt-5 h-16 w-44 border-2 border-fuchsia-800 b_glow'>
             FIREBASE
+          </h2>
+        </h2>
+
+        <h2
+          data-aos='fade-down'
+          className='text-[26px] flex  flex-col items-center justify-center font-semibold text-fuchsia-800 rounded-3xl h-64 w-44 border-2 border-fuchsia-800 b_glow md:hidden'
+        >
+          <img src={TW} className='mt-10 px-5 PY-3 mb-9' size={40} alt='' />
+          <h2 className='text-[26px] flex items-center justify-center font-semibold text-fuchsia-800 rounded-3xl mt-7 h-16 w-44 border-2 border-fuchsia-800 b_glow'>
+            TAILWIND
           </h2>
         </h2>
       </div>
